@@ -4,7 +4,7 @@ public class HelloSpring {
 
 	public static void main(String[] args) {
 		Mybean bean = new Mybean();
-		bean.sayHello("Spring");
+		bean.sayHello("½ºÇÁ¸µ!");
 		
 	}
 
