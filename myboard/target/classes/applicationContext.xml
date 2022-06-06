@@ -16,7 +16,6 @@
 	<bean id = "sony" class="jk.spring.polymorphism.SonySpeaker"/>
 	<bean id = "apple" class = "jk.spring.polymorphism.AppleSpeaker"/>
 -->
-
 <!-- 
 	<bean id = "collectionbean" class="jk.spring.collection.CollectionBean">
 		<property name="addressList">
@@ -29,9 +28,9 @@
 	</bean>
 -->
 
-
-	
-	
+	<context:component-scan base-package="jk.spring.polymorphism"/>
+		
+	<bean id = "apple" class="jk.spring.polymorphism.AppleSpeaker" />
 	
 	
 </beans>

@@ -1,6 +1,13 @@
 package jk.spring.polymorphism;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("tv")
 public class LGTV implements TV{
+	@Autowired
+	private Speaker speaker ;
 	public void powerOn() {
 		System.out.println("LGTV 전원을 켠다.");
 	}
@@ -8,12 +15,12 @@ public class LGTV implements TV{
 		System.out.println("LGTV 전원을 끈다.");
 	}
 	public void volumeUp() {
-		System.out.println("LGTV 소리를 키운다.");
+		speaker.volumeUp();
 	}
 	public void volumeDown() {
-		System.out.println("LGTV 소리를 줄인다.");
+		speaker.volumeDown();
 	}
 	public LGTV() {
-		System.out.println("LGtv 객체 생성");
+		System.out.println("LGTV 객체 생성");
 	}
 }
