@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id ="tv" class="jk.spring.polymorphism.LGTV"/>
+<!-- 
+	<bean id ="tv" class="jk.spring.polymorphism.SamsungTV" >
+		<property name="speaker" ref = "apple"></property>
+		<property name="price" value = "170"></property>
+	</bean>
+
+	<bean id = "sony" class="jk.spring.polymorphism.SonySpeaker"/>
+	<bean id = "apple" class = "jk.spring.polymorphism.AppleSpeaker"/>
+-->
+
+<!-- 
+	<bean id = "collectionbean" class="jk.spring.collection.CollectionBean">
+		<property name="addressList">
+			<props>
+				<prop key="홍길동">율도국</prop>
+				<prop key="손오공">화과산</prop>
+				<prop key="저팔계">목우촌</prop>
+			</props>
+		</property>
+	</bean>
+-->
+
+
+	
+	
+	
+	
 </beans>
